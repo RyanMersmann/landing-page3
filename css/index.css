@@ -140,6 +140,7 @@ table {
   border: 1px solid white;
   padding: 1%;
   opacity: 100%;
+  color: white;
 }
 .header-bar .left:hover {
   transform: scale(1.1);
@@ -168,21 +169,19 @@ table {
   color: #c75050;
   transform: scale(1.2);
 }
-.footer {
+.page-footer {
   display: flex;
-  height: 5px;
-  justify-content: space-between;
-  padding: 1%;
-}
-.footer-login {
-  display: flex;
-  height: 50px;
+  height: 30px;
   justify-content: space-between;
   padding: 1%;
   background-color: #c75050;
+  color: white;
+  align-items: center;
 }
 .page-container {
   background-image: url(../img/field-crops.jpeg);
+  height: 900px;
+  width: 100%;
 }
 .home-page-container {
   background-image: url(../img/produce.jpeg);
@@ -215,7 +214,7 @@ table {
   flex-direction: column;
   background-color: white;
   height: 200px;
-  padding: 2% 2% 8%;
+  padding: 2% 2% 10%;
   margin-top: 5%;
   border-radius: 15px;
 }
@@ -229,7 +228,7 @@ table {
   height: 200px;
   padding: 5%;
   margin-top: 5%;
-  padding: 2% 2% 8%;
+  padding: 2% 2% 10%;
   border-radius: 15px;
 }
 .middle-content .farmer-signup-form input {
@@ -237,7 +236,7 @@ table {
 }
 .lower-content {
   width: 100%;
-  height: 610px;
+  height: 510px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -273,4 +272,52 @@ table {
 .even-lower-content p {
   display: flex;
   justify-content: center;
+}
+.login-middle-content {
+  width: 100%;
+  height: 610px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 50px;
+}
+.login-middle-content .log-in-prompt {
+  padding-bottom: 25px;
+  font-size: 1.5rem;
+  color: gray;
+}
+.login-middle-content .login-form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100px;
+  padding: 2% 2% 8%;
+  margin-top: 5%;
+  border-radius: 15px;
+}
+.login-middle-content .login-form input {
+  font-size: 1.5rem;
+}
+.login-middle-content .login-form .remember-pass {
+  display: flex;
+  flex: start;
+  color: #9b9b9b;
+}
+.login-middle-content .login-form .remember-pass .check-box {
+  border: 1px solid gray;
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+}
+.login-middle-content .login-form .sign-in-button {
+  border-radius: 10px;
+  background-color: #c75050;
+  color: white;
+  padding: 4%;
+  font-weight: bold;
+  text-align: center;
+}
+.login-middle-content .login-form .sign-in-button:hover {
+  background-color: white;
+  color: #c75050;
+  border: 1px solid #c75050;
 }
