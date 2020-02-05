@@ -4,41 +4,43 @@
     align-items: center;
     padding: 30px;
     background-color: none;
-    opacity: 50%;
+    opacity: 100%;
     color: black;
     font-size: 2rem;
-    // background-color: rgb(201, 238, 143);
 
     .left{
         border: 1px solid white;
         padding: 1%;
+        opacity: 100%;
         
     }
     .left:hover{
-        transform: scale(1.2);
-        color: rgb(199, 80, 80);
+        transform: scale(1.1);
+        color: @farm-red;
     }
     .center{
         font-size: 2rem;
-        background-color: rgb(199, 80, 80);
+        background-color: @farm-red;
         padding: 1%;
         border-radius: 50px;
         color: white;
+        opacity: 100%;
     }
     .center:hover{
-        transform: scale(1.1);
         background-color: white;
-        color: rgb(199, 80, 80);
+        color: @farm-red;
+        border: 1px solid @farm-red;
 
     }
     .right{
         font-size: 1.5rem; 
         padding: .5%;
-        margin-right: 1%;   
+        margin-right: 1%;
+        opacity: 100%; 
 
     }
     .right:hover{
-        color: rgb(199, 80, 80);
+        color: @farm-red;
         transform: scale(1.2);
     }
 } // End Header Bar
