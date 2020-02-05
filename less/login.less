@@ -1,27 +1,56 @@
-.middle-content{
+.login-middle-content{
     width: 100%;
     height: 610px;
     display: flex;
     justify-content: space-evenly;
     border-radius: 50px;
 
-    .sign-up-prompt{
+    .log-in-prompt{
         padding-bottom: 25px;
         font-size: 1.5rem;
         color: gray;
     }
     
-    .buyer-signup-form{
+    .login-form{
         display: flex;
         flex-direction: column;
         background-color: white;
-        height: 200px;
+        height: 100px;
         padding: 2% 2% 8%;
         margin-top: 5%;
         border-radius: 15px;
 
         input{
             font-size: 1.5rem;
+        }
+
+        .remember-pass{
+            display: flex;
+            flex: start;
+            color: rgb(155, 155, 155);
+
+            .check-box{
+                border: 1px solid gray;
+                height: 10px;
+                width: 10px;
+                margin-right: 10px;
+
+            }
+        }
+
+        .sign-in-button{
+            border-radius: 10px;
+            background-color: @farm-red;
+            color: white;
+            padding: 4%;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .sign-in-button:hover{
+            background-color: white;
+            color: @farm-red;
+            border: 1px solid @farm-red;
         }
     }
 }
