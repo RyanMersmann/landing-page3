@@ -164,6 +164,8 @@ table {
   padding: 0.5%;
   margin-right: 1%;
   opacity: 100%;
+  text-decoration: none;
+  border: 1px solid red;
 }
 .header-bar .right:hover {
   color: #c75050;
@@ -184,7 +186,7 @@ table {
   width: 100%;
 }
 .home-page-container {
-  background-image: url(../img/produce.jpeg);
+  background-color: green;
 }
 .account-page-container {
   background-image: url(../img/produce.jpeg);
@@ -290,7 +292,7 @@ table {
   flex-direction: column;
   background-color: white;
   height: 100px;
-  padding: 2% 2% 8%;
+  padding: 2% 2% 10%;
   margin-top: 5%;
   border-radius: 15px;
 }
@@ -317,6 +319,54 @@ table {
   text-align: center;
 }
 .login-middle-content .login-form .sign-in-button:hover {
+  background-color: white;
+  color: #c75050;
+  border: 1px solid #c75050;
+}
+.register-middle-content {
+  width: 100%;
+  height: 610px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 50px;
+}
+.register-middle-content .register-prompt {
+  padding-bottom: 25px;
+  font-size: 1.5rem;
+  color: gray;
+}
+.register-middle-content .register-form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100px;
+  padding: 2% 2% 22%;
+  margin-top: 5%;
+  border-radius: 15px;
+}
+.register-middle-content .register-form input {
+  font-size: 1.5rem;
+}
+.register-middle-content .register-form .remember-pass {
+  display: flex;
+  flex: start;
+  color: #9b9b9b;
+}
+.register-middle-content .register-form .remember-pass .check-box {
+  border: 1px solid gray;
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+}
+.register-middle-content .register-form .sign-in-button {
+  border-radius: 10px;
+  background-color: #c75050;
+  color: white;
+  padding: 4%;
+  font-weight: bold;
+  text-align: center;
+}
+.register-middle-content .register-form .sign-in-button:hover {
   background-color: white;
   color: #c75050;
   border: 1px solid #c75050;
