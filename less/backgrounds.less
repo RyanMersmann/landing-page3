@@ -2,18 +2,25 @@
 
 .home-page-container{
     background-image: url(../img/field-crops.jpeg);
-    height: 875px;
-    width: 100%;
+    .height-width(875px, 100%);
 }
 
 .about-page-container{
     background-image: url(../img/vineyard.jpg);
-    height: 875px;
-    width: 100%;
+    .height-width(875px, 100%);
 }
 
 .login-register-page-container{
     background-image: url(../img/produce2.jpg);
-    height: 875px;
-    width: 100%;
+    .height-width(875px, 100%);
+}
+
+@media @tablet {
+
+}
+
+@media @phone {
+    .home-page-container{
+        .height-width(875px, 100%);
+    }
 }
