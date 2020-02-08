@@ -126,7 +126,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.header-bar {
+.login-register-page-container .header-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,17 +136,17 @@ table {
   color: black;
   font-size: 2rem;
 }
-.header-bar .left {
+.login-register-page-container .header-bar .left {
   border: 1px solid white;
   padding: 1%;
   opacity: 100%;
   color: white;
 }
-.header-bar .left:hover {
+.login-register-page-container .header-bar .left:hover {
   transform: scale(1.1);
   color: #c75050;
 }
-.header-bar .center {
+.login-register-page-container .header-bar .center {
   font-size: 2rem;
   background-color: #c75050;
   padding: 1%;
@@ -154,22 +154,96 @@ table {
   color: white;
   opacity: 100%;
 }
-.header-bar .center:hover {
+.login-register-page-container .header-bar .center:hover {
   background-color: white;
   color: #c75050;
   border: 1px solid #c75050;
 }
-.header-bar .right {
+.login-register-page-container .header-bar .right {
   font-size: 1.5rem;
   padding: 0.5%;
   margin-right: 1%;
   opacity: 100%;
   text-decoration: none;
-  border: 1px solid red;
 }
-.header-bar .right:hover {
+.login-register-page-container .header-bar .right:hover {
   color: #c75050;
   transform: scale(1.2);
+}
+.home-page-container .header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: none;
+  opacity: 100%;
+  color: black;
+  font-size: 2rem;
+}
+.home-page-container .header-bar .left {
+  font-size: 2rem;
+  background-color: #c75050;
+  padding: 1%;
+  border-radius: 50px;
+  color: white;
+  opacity: 100%;
+}
+.home-page-container .header-bar .left:hover {
+  background-color: white;
+  color: #c75050;
+  border: 1px solid #c75050;
+}
+.home-page-container .header-bar .right {
+  font-size: 1.5rem;
+  margin-right: 1%;
+  opacity: 100%;
+  width: 25%;
+}
+.home-page-container .header-bar .right nav {
+  width: 100%;
+}
+.home-page-container .header-bar .right nav a {
+  text-decoration: none;
+  margin: 1%;
+  padding-right: 2%;
+}
+.about-page-container .header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: none;
+  opacity: 100%;
+  color: black;
+  font-size: 2rem;
+}
+.about-page-container .header-bar .left {
+  font-size: 2rem;
+  background-color: #c75050;
+  padding: 1%;
+  border-radius: 50px;
+  color: white;
+  opacity: 100%;
+}
+.about-page-container .header-bar .left:hover {
+  background-color: white;
+  color: #c75050;
+  border: 1px solid #c75050;
+}
+.about-page-container .header-bar .right {
+  font-size: 1.5rem;
+  margin-right: 1%;
+  opacity: 100%;
+  width: 25%;
+}
+.about-page-container .header-bar .right nav {
+  width: 100%;
+}
+.about-page-container .header-bar .right nav a {
+  text-decoration: none;
+  margin: 1%;
+  padding-right: 2%;
+  color: white;
 }
 .page-footer {
   display: flex;
@@ -180,25 +254,6 @@ table {
   color: white;
   align-items: center;
 }
-.page-container {
-  background-image: url(../img/field-crops.jpeg);
-  height: 900px;
-  width: 100%;
-}
-.home-page-container {
-  background-color: green;
-}
-.account-page-container {
-  background-image: url(../img/produce.jpeg);
-}
-.about-page-container {
-  background-image: url(../img/vineyard.jpg);
-}
-.login-page-container {
-  background-image: url(../img/produce2.jpg);
-  height: 875px;
-  width: 100%;
-}
 .middle-content {
   width: 100%;
   height: 610px;
@@ -206,74 +261,82 @@ table {
   justify-content: space-evenly;
   border-radius: 50px;
 }
-.middle-content .sign-up-prompt {
-  padding-bottom: 25px;
-  font-size: 1.5rem;
-  color: gray;
+.middle-content img {
+  height: 150px;
+  width: 150px;
 }
-.middle-content .buyer-signup-form {
-  display: flex;
-  flex-direction: column;
+.middle-content .products-section {
   background-color: white;
-  height: 200px;
-  padding: 2% 2% 10%;
-  margin-top: 5%;
-  border-radius: 15px;
+  width: 90%;
+  height: 100%;
+  margin-top: 2.5%;
 }
-.middle-content .buyer-signup-form input {
-  font-size: 1.5rem;
-}
-.middle-content .farmer-signup-form {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  padding: 5%;
-  margin-top: 5%;
-  padding: 2% 2% 10%;
-  border-radius: 15px;
-}
-.middle-content .farmer-signup-form input {
-  font-size: 1.5rem;
-}
-.lower-content {
-  width: 100%;
-  height: 510px;
+.middle-content .products-section .search {
   display: flex;
   justify-content: space-evenly;
-}
-.lower-content .image-header {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding-bottom: 2%;
-}
-.lower-content .lower-content-pics {
-  display: flex;
-}
-.lower-content .lower-content-pics .people-pics {
-  padding: 7.5%;
-}
-.lower-content .lower-content-pics .people-pics img {
-  height: 300px;
-  width: 300px;
-}
-.even-lower-content {
-  background-color: #c9ee8f;
+  align-items: center;
+  height: 5%;
   width: 100%;
-  height: 310px;
+  margin-top: 2.5%;
+  font-size: 1.5rem;
 }
-.even-lower-content h1 {
-  font-size: 3rem;
+.middle-content .products-section .products1 {
+  width: 100%;
+  height: 250px;
   display: flex;
-  justify-content: center;
-  margin: 10%;
-  padding-top: 5%;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.even-lower-content p {
+.middle-content .products-section .products1 .item {
+  width: 200px;
+  height: 225px;
+}
+.middle-content .products-section .products1 .item .produce-image {
+  height: 150px;
+  width: 150px;
+  margin-left: 25px;
+}
+.middle-content .products-section .products1 .item .produce-image:hover {
+  transform: scale(1.1);
+}
+.middle-content .products-section .products1 .item .produce-description {
+  margin: 10px 0 0 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.middle-content .products-section .products1 .item .add-cart {
+  margin: 10px 0 0 25px;
+  font-style: italic;
+  text-decoration: underline;
+}
+.middle-content .products-section .products2 {
+  width: 100%;
+  height: 250px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.middle-content .products-section .products2 .item {
+  width: 200px;
+  height: 225px;
+}
+.middle-content .products-section .products2 .item .produce-image {
+  height: 150px;
+  width: 150px;
+  margin-left: 25px;
+}
+.middle-content .products-section .products2 .item .produce-image:hover {
+  transform: scale(1.1);
+}
+.middle-content .products-section .products2 .item .produce-description {
+  margin: 10px 0 0 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.middle-content .products-section .products2 .item .add-cart {
+  margin: 10px 0 0 25px;
+  font-style: italic;
+  text-decoration: underline;
 }
 .login-middle-content {
   width: 100%;
@@ -284,7 +347,7 @@ table {
 }
 .login-middle-content .log-in-prompt {
   padding-bottom: 25px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: gray;
 }
 .login-middle-content .login-form {
@@ -318,10 +381,18 @@ table {
   font-weight: bold;
   text-align: center;
 }
+.login-middle-content .login-form .sign-in-button a {
+  text-decoration: none;
+  color: white;
+}
 .login-middle-content .login-form .sign-in-button:hover {
   background-color: white;
   color: #c75050;
   border: 1px solid #c75050;
+}
+.login-middle-content .login-form .sign-in-button:hover a {
+  text-decoration: none;
+  color: #c75050;
 }
 .register-middle-content {
   width: 100%;
@@ -365,9 +436,33 @@ table {
   padding: 4%;
   font-weight: bold;
   text-align: center;
+  text-decoration: none;
+}
+.register-middle-content .register-form .sign-in-button a {
+  text-decoration: none;
+  color: white;
 }
 .register-middle-content .register-form .sign-in-button:hover {
   background-color: white;
   color: #c75050;
   border: 1px solid #c75050;
+}
+.register-middle-content .register-form .sign-in-button:hover a {
+  text-decoration: none;
+  color: #c75050;
+}
+.home-page-container {
+  background-image: url(../img/field-crops.jpeg);
+  height: 875px;
+  width: 100%;
+}
+.about-page-container {
+  background-image: url(../img/vineyard.jpg);
+  height: 875px;
+  width: 100%;
+}
+.login-register-page-container {
+  background-image: url(../img/produce2.jpg);
+  height: 875px;
+  width: 100%;
 }
