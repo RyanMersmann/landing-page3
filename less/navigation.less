@@ -55,9 +55,7 @@
 
 .home-page-container{
     .header-bar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        .centeriing-position(space-between, center);
         padding: 30px;
         background-color: none;
         opacity: 100%;
@@ -101,9 +99,7 @@
 
 .about-page-container{
     .header-bar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        .centeriing-position(space-between, center);
         padding: 30px;
         background-color: none;
         opacity: 100%;
@@ -149,21 +145,15 @@
 //Media Queries
 
 // Tablet
-@media ( max-width: 800px ) {
+@media @tablet {
     .home-page-container{
         .header-bar{
            
             .left{
-
+                text-align: center;
             }
             .right{
                 padding-left: 30%;
-                nav{
-                    
-                    a{
-                        
-                    }
-                }
             }
         }
         
@@ -171,7 +161,7 @@
 
 }
 // Mobile
-@media (max-width: 500px) {
+@media @phone {
     .home-page-container{
         .header-bar{
           display: flex;

@@ -1,26 +1,22 @@
 .page-footer{
-    display: flex;
-    height: 30px;
-    justify-content: space-between;
+    .centeriing-position(space-between, center);
     padding: 1%;
     background-color: @farm-red;
     color: white;
-    align-items: center;
+    height: 30px;
 }
 
 .home-about-page-footer{
-    display: flex;
-    height: 30px;
-    justify-content: space-between;
+    .centeriing-position(space-between, center);
     padding: 1%;
     background-color: @farm-red;
     color: white;
-    align-items: center;
     margin-top: 8%;
+    height: 30px;
 }
 
 //Tablet
-@media ( max-width: 800px) {
+@media @tablet {
     .home-about-page-footer{
         height: 10%;
         padding-top: 2%;
@@ -29,7 +25,7 @@
 
 
 //Mobile
-@media ( max-width: 500px) {
+@media @phone {
     .home-about-page-footer{
         height: 60px;
         padding-top: 5%;
