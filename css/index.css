@@ -254,6 +254,16 @@ table {
   color: white;
   align-items: center;
 }
+.home-about-page-footer {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  padding: 1%;
+  background-color: #c75050;
+  color: white;
+  align-items: center;
+  margin-top: 8%;
+}
 .middle-content {
   width: 100%;
   height: 610px;
@@ -337,6 +347,48 @@ table {
   margin: 10px 0 0 25px;
   font-style: italic;
   text-decoration: underline;
+}
+.about-middle {
+  width: 100%;
+  height: 610px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 50px;
+}
+.about-middle .bio-section {
+  width: 90%;
+  height: 100%;
+  margin-top: 2.5%;
+}
+.about-middle .bio-section .section1 {
+  display: flex;
+  width: 100%;
+  height: 305px;
+}
+.about-middle .bio-section .section1 .part1 {
+  padding: 5%;
+  font-size: 2rem;
+  background-color: rgba(155, 155, 155, 0.75);
+  color: white;
+}
+.about-middle .bio-section .section1 .part2 img {
+  height: 300px;
+  width: 500px;
+}
+.about-middle .bio-section .section2 {
+  width: 100%;
+  height: 305px;
+  display: flex;
+}
+.about-middle .bio-section .section2 .part1 img {
+  height: 300px;
+  width: 500px;
+}
+.about-middle .bio-section .section2 .part2 {
+  padding: 5%;
+  font-size: 2rem;
+  background-color: rgba(155, 155, 155, 0.75);
+  color: white;
 }
 .login-middle-content {
   width: 100%;
